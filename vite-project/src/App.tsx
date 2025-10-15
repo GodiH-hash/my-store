@@ -33,14 +33,14 @@ export default function App() {
         {products?.map((p) => (
           <div
             key={p.id}
-            className="bg-white rounded-lg shadow-md hover:shadow-lg p-4 transition text-center flex flex-col justify-between h-full w-60 sm:w-64"
+            className="bg-white rounded-lg shadow-md hover:shadow-lg p-16 transition text-center flex flex-col justify-between h-full w-60 sm:w-64"
           >
             {/* Image container */}
-            <div className="h-32 flex justify-center items-center overflow-hidden">
+            <div className="h-20 flex justify-center items-center overflow-hidden">
               <img
                 src={p.image}
                 alt={p.title}
-                className="max-h-24 object-contain transition-transform duration-300 hover:scale-105"
+                className="max-h-20 object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
 
